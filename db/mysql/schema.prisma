@@ -147,7 +147,7 @@ model VisitorData {
   id          String    @id() @map("visitor_data_id") @db.VarChar(36)
   websiteId   String    @map("website_id") @db.VarChar(36)
   visitorId   String    @map("visitor_id") @db.VarChar(36)
-  eventKey    String    @map("event_key") @db.VarChar(500)
+  visitorKey    String    @map("visitor_key") @db.VarChar(500)
   stringValue String?   @map("string_value") @db.VarChar(500)
   numberValue Decimal?  @map("number_value") @db.Decimal(19, 4)
   dateValue   DateTime? @map("date_value") @db.Timestamp(0)
